@@ -17,9 +17,7 @@
 
         <span style="padding-top:7px">
             <img class="icon_local" src="../assets/img/feel.png" alt="icon"><br />
-            <p class="value" >
-                {{ Math.round(town.current.feels_like) }}°C
-            </p>
+            <p class="value" >{{ Math.round(town.current.feels_like) }}°C</p>
             <p class="note">Feels Like</p>
         </span>
         
