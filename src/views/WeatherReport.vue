@@ -30,10 +30,8 @@
         </span>
 
         <span>
-            <p class="value">
-                <img class="icon_local" src="../assets/img/pressure.png" alt="icon"><br />
-                {{ town.current.pressure }}mBar
-            </p>
+            <img class="icon_local" src="../assets/img/pressure.png" alt="icon"><br />
+            <p class="value">{{ town.current.pressure }}mBar</p>
             <p class="note">Pressure</p>
         </span>
 
