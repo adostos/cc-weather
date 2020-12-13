@@ -47,14 +47,14 @@
             timeBuilder() {
                 let time = new Date();
                 let hours = time.getHours();
-                let minutes = time.getMinutes();
+                let minutes = "0" + time.getMinutes();
 
                 let formattedTime
                 if (hours > 12) {
                     hours = hours - 12
-                    formattedTime = `${hours}:${minutes}PM`
+                    formattedTime = `${hours}:${minutes.substr(-2)}PM`
                 } else {
-                    formattedTime = `${hours}:${minutes}AM`
+                    formattedTime = `${hours}:${minutes.substr(-2)}AM`
                 }
 
                 return formattedTime
@@ -73,7 +73,6 @@
 </script>
 
 <style lang="scss" scoped>
-@import '../main.scss';
 
 #nav {
     display: flex;

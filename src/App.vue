@@ -16,7 +16,24 @@ import TheNavigation from './components/TheNavigation'
 </script>
 
 <style lang="scss">
-@import './main.scss';
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 204, 255);
+}
+
+/* body {
+    margin: 0 auto;
+    background: url("./assets/img/bg.png") no-repeat;
+    background-color: rgb(0, 204, 255);
+
+    background: {
+        top: 0
+    };
+} */
 
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
